@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /* 
+    #combinator
+    p span{} 부모자식관계
+    p>span{} 부모와 바로 밑 자식관계
+    p+span{} 바로 다음에 오는 형제관계
+    p~span{} 바로 다음에 오지 않아도 되는 형제관계
+
+    #attribute
+    input[type="word"]{} type="word"인 input만을 선택
+    input[type~="word"]{} "word"를 포함하는 input선택
+    input[type$="word"]{} 끝에 "word"가 오는 input 선택
+    input[type^="word"]{} 앞에 "word"가 오는 input 선택
+
+    #state
+    :hover 커서가 올라간상태
+    :active 클릭할때
+    :focus 키보드로 선택한경우
+    :visited link에서 쓰이고 사이트를 방문한 이력이 있을경우
+    :focus-within 자식들중 하나라도 focus상태에 있다면 부모가 바뀔때 쓰임
+
+    #pseudo element
+    ::placeholder placehoder만을 꾸밀때 사용
+    ::selection 드래그 했을때
+    ::first-letter 앞 글자에
+    ::first-line 첫 줄
+    */
+    body{
+        height:1000vh;
+        margin:50px;
+    }
+    span{
+        background-color: yellowgreen;
+        padding:5px;
+        border-radius: 10px;
+    }
+    input::placeholder{
+        color:slateblue;
+    }
+    p::selection{
+        color:white;
+        background-color: yellowgreen;
+    }
+   
+</style>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+   <form action="">
+       <input type="text" placeholder="Name">
+   </form>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    /* flex박스는 3가지 규칙이 있다. 
+        1. 자식엘리먼트에는 어떤 것도 적지 말아야한다. 
+        자식 엘리먼트를 움직이게 하려면 부모 엘리먼트에를 flex container로 만들어야 한다.
+          div의 부모를 display:flex로 만든다.
+        2. justify-content : main axis에서 작용 (가로) (디폴트)
+        3.    align-items : cross axis에서 작용 (세로)
+        flex-container가 height를 가지고 있지 않다면 align-items를 사용하더라도 
+        위치가 바뀌지 않음
+        vh=viewport height(스크린에 따라 다름)
+        */
+    body{
+        margin:20px;
+        display:flex;
+        justify-content: center ;
+        align-items: center;
+        flex-wrap:nowrap;
+    }
+    div{
+        width: 300px;
+        height: 300px;
+        background-color: teal;
+    }
+    #second{
+        background-color: wheat;
+    }
+</style>
+
+
+</head>
+<body>
+    <div></div>
+    <div id=second></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+@keyframes circlemoving {
+  0% {
+    transform: rotatez(0deg);
+  }
+  100% {
+    transform: rotatez(180deg);
+  }
+}
+@keyframes squaremoving {
+  0% {
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.7);
+  }
+  100% {
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 200px;
+  background-color: #6bbcbe;
+}
+
+.circle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  animation: circlemoving 1s ease-in-out infinite;
+}
+.circle > div {
+  background-color: white;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 20px;
+}
+
+.square {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 150px;
+  flex-direction: row;
+}
+.square > div {
+  background-color: white;
+  width: 15px;
+  height: 80px;
+  margin: 10px;
+  animation: squaremoving 1s ease-in-out infinite;
+}
+.square .a {
+  animation-delay: 0.1s;
+}
+.square .b {
+  animation-delay: 0.2s;
+}
+.square .c {
+  animation-delay: 0.3s;
+}
+.square .d {
+  animation-delay: 0.4s;
+}
+.square .e {
+  animation-delay: 0.5s;
+}

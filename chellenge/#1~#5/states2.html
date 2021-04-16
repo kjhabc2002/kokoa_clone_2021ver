@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction:column;
+    }
+    form{
+        display:flex;
+        border:1px solid salmon;
+    
+        flex-direction:column;
+        padding:20px;
+    }
+    /* 조건을 나열해 여러 상황을 설정할 수 있음
+       ex)form:hover input:focus
+       상위요소위에 마우스커서가 있고, 하위요소가 focused되었을때
+       효과를 적용하게 된다. (and개념)
+        */
+    form:hover input:focus{
+        border-color:sienna;
+
+    }
+</style>
+<body>
+   <form action="">
+       <input type="text">
+       <input type="text">
+       <input type="text">
+   </form>
+
+</body>
+</html>

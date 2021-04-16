@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    /* 
+    justify-content나 align-items의 default를 변경하기 위해서는
+    flex-direction을 수정하면된다
+    flex-direction에는 두가지 속성 column과 row가 있다.
+    flex-direction의 기본값은 row이다.
+    flex-direction:column;을 주면 주축과 교차축이 반전된다.
+    원하는만큼 부모-자식 flex컨테이너를 만들수있다.
+    flex-wrap:nowrap;으로 설정하면 크기를 줄여서라도 한줄로 표시한다.
+    반대로 wrap으로 설정하면 한줄에 컨텐츠가 들어갈 수 있는 만큼만 보여주고 나머지는 다음줄로 넘긴다.
+    flexbox는 width값을 초기사이즈로만 여기고 모든 엘리먼트를 같은 줄에 있기 하기 위해 width를 바꾸기도 한다
+    flex-direction:column-reverse; 밑에서 시작해서 위로 올라가게한다.
+    flex-wrap:wrap:reverse; 브라우저를 줄일때, 엘리먼트가 겹쳐지는 위치가 역전된다.
+        */
+    body{
+        margin:20px;
+        display:flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-wrap:nowrap;
+    }
+    div{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        background-color: teal;
+        
+    } 
+    #second{
+        background-color: wheat;
+    }
+</style>
+
+
+</head>
+<body>
+    <div>1</div>
+    <div id=second>2</div>
+    <div>3</div>
+</body>
+</html>

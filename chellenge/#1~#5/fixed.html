@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- position fixed를 이용하면 스크롤해도 항상 제자리에 있는다. 
+        처음 만들어진 자리에 고정 되어있다. 하지만 top,left,right,bottom 중 하나만
+         수정해도 서로 다른 레이어에 위치하게되어 원래 위치가 무시된다.
+        position fixed를 이용하면 가장 위에 위치하게 된다.
+    -->
+    <style>
+        body{
+            height:100vh;
+            margin:20px;
+        }
+        div{
+            width:300px;
+            height:300px;
+            color:white;
+        }
+        /* 서로 새로운 레이어에 위치하기 때문에 둘다 첫번째 위치에 자리잡음 */
+        #green{
+            position:fixed;
+            background-color: teal;
+            opacity:0.2;
+        }
+        #different{
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <div id="green"></div>
+    <div id="different"></div>
+</body>
+</html>

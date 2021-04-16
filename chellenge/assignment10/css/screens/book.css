@@ -1,0 +1,120 @@
+.content-bar {
+  margin: 200px 20px;
+}
+div.content-status {
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: row;
+}
+.content-bar__title {
+  font-size: 30px;
+  margin: 15px 0px;
+}
+.content-status__img {
+  border-radius: 20px;
+}
+.content-status__step {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  margin-right: 100px;
+}
+.content-status__title {
+  font-size: 20px;
+  padding: 10px 0px;
+}
+.content-status__name {
+  color: lightgray;
+}
+.content-status__score {
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: row;
+}
+#star {
+  color: #ffce33;
+  padding: 0px 2px;
+}
+#star:last-child {
+  color: lightgray;
+}
+.content-status__genre {
+  padding: 10px 0px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.content-status__genre__btn1,
+.content-status__genre__btn2 {
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: rgb(230, 230, 230);
+}
+.content-status__bookmark {
+  padding: 10px 0px;
+  display: flex;
+  text-align: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.content-status__bookmark_img {
+  background-color: #ffce33;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  width: 50px;
+  height: 35px;
+  border-radius: 100%;
+}
+.content-status__bookmark_btn {
+  margin-left: 40px;
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  width: 120px;
+  background-color: #232020;
+  color: white;
+}
+/* Top Advantures  */
+.content-status__top {
+  padding-right: 20px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-status__topscore {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.topimg_size {
+  border-radius: 10px;
+  height: 140px;
+  width: 100px;
+}
+#topstar {
+  color: #ffce33;
+  padding: 0px 1px;
+}
+#topstar:last-child {
+  color: lightgray;
+}
+.content-status__author {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 20px;
+  margin-right: 100px;
+}
+.content-status__author__title {
+  font-size: 20px;
+  padding: 20px 0px;
+}
+
+p {
+  color: lightgray;
+}

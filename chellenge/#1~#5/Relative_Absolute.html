@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.position:static은 레이아웃이 박스를 처음 위치하는 곳에 두는것을 말한다. 
+           2.position:fixed는 처음에 위치한 자리에서 화면의 스크롤에 상관없이 고정되는 것을 말한다.
+           top,bottom,left,right속성을 줘서 고정된 위치를 이동시킬 수 있음. 단 이동이 되면 가장 위의 새 레이어에 놓이게됨
+           3.position:relative는 박스가 처음 위치한 곳을 기준으로 이동
+            top,bottom,left,right 속성을 주면 첫 위치를 기준으로 이동됨
+           4. position:absolue는 가장 가까운 부모엘리먼트에 position:relative를 추가한다면
+           그 부모를 기준으로 top,bottom,left,right이동하고, 아닐시엔 body기준으로
+        
+        
+        */
+        body{
+            height:1000vh;
+            margin:50px;
+        }
+        div{
+            width:300px;
+            height:300px;
+            background-color: wheat;
+            position:relative;
+        }
+        
+        .green{
+        
+            background-color: teal;
+            height:100px;
+            position:absolute;
+            top:0px;
+            width:100px;
+        }
+        #different{
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="green">
+
+        </div>
+    </div>
+</body>
+</html>

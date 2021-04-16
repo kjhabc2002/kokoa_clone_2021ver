@@ -1,0 +1,13 @@
+@import "reset.css";
+@import "status-bar.css";
+@import "search.css";
+@import "screens/book.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  max-width: 360px;
+  height: 1000vh;
+}
+* {
+  box-sizing: border-box;
+}

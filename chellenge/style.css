@@ -1,0 +1,116 @@
+body {
+  display: flex;
+
+  align-items: center;
+  margin: 50px;
+  background-color: rgb(240, 238, 238);
+  flex-direction: column;
+}
+
+h2 {
+  margin-bottom: 50px;
+}
+.first_parent {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.tomato {
+  position: relative;
+  background-color: tomato;
+  width: 150px;
+  height: 300px;
+  border: solid 5px white;
+  margin: 10px;
+}
+.tomato > div {
+  position: absolute;
+  background-color: white;
+  top: 30px;
+  width: 150px;
+  height: 100px;
+}
+.tomato > div > span {
+  display: flex;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 35px;
+}
+
+.teal {
+  position: relative;
+  background-color: teal;
+  width: 150px;
+  height: 300px;
+  border: solid 5px white;
+  margin: 10px;
+}
+.teal > div {
+  position: absolute;
+  background-color: white;
+  top: 30px;
+  width: 150px;
+  height: 100px;
+}
+.teal > div > span {
+  display: flex;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 35px;
+}
+.second_parent {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.burlywood {
+  position: relative;
+  background-color: burlywood;
+  width: 150px;
+  height: 300px;
+  border: solid 5px white;
+  margin: 10px;
+}
+.burlywood > div {
+  position: absolute;
+  background-color: white;
+  top: 30px;
+  width: 150px;
+  height: 100px;
+}
+.burlywood > div > span {
+  display: flex;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 35px;
+}
+
+.thistle {
+  position: relative;
+  background-color: thistle;
+  width: 150px;
+  height: 300px;
+  border: solid 5px white;
+  margin: 10px;
+}
+.thistle > div {
+  position: absolute;
+  background-color: white;
+  top: 30px;
+  width: 150px;
+  height: 100px;
+}
+.thistle > div > span {
+  display: flex;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 35px;
+}

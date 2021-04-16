@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <!-- div의 바로 밑 자식에서 span을 찾아서 그것만 효과를 주는 방법
+    1. div span{
+        text-decoration:underline;
+    } 
+    이렇게하면 div밑에 있는 모든 span이 효과를 가진다.
+    직접적인 부모가 아니어도 밑에 있는 것들이 모두 css가 찾는다
+    2. div>span{
+       text-decoration:underline; 
+    }
+    span이 div의 direct children을 의미합니다. 이땐 direct children이 아니면 작동하지 않습니다.
+    3. p+Span
+    +를 사용하면 형제에게 영향을 끼칠 수 있다.
+    * >를 사용하면 direct child를 핮고, +를 사용하면 바로 코드상 밑에 있는 sibling을 찾게된다.
+    
+    -->
+    <style>
+        body{
+            height: 1000vh;
+            margin:50px;
+        }
+        span{
+            background-color: yellowgreen;
+            padding:5px;
+            border-radius: 10px;
+        }
+        p span{
+            color:white;
+        }
+        p + span{ 
+            text-decoration:underline;
+        } 
+        
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+        mollit anim id est laborum. <span>inside</span>
+    </p>
+    <span>hello</span>
+</body>
+</html>

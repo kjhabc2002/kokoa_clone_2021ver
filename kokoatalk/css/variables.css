@@ -1,0 +1,5 @@
+/* horizontal-space - main의 padding에 적용하여 좌우간격맞추자 */
+:root {
+  --yellow: #fae100;
+  --horizontal-space: 25px;
+}
