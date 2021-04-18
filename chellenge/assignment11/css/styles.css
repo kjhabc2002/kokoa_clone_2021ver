@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* screen */
+@import "screen/screen-header.css";
+@import "screen/screen-main.css";
+@import "screen/screen-footer.css";
+@import "screen/screen-second.css";
+/* effect */
+@import "effect.css";
+
+@import "variable.css";
+@import "reset.css";
+* {
+  box-sizing: border-box;
+}
+html {
+  background-color: rgb(231, 231, 231);
+}
+body {
+  color: #3e363e;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  max-width: 100%;
+}
+.screen-first {
+  background-color: white;
+  margin: 20px;
+  border-radius: 30px;
+  padding: 10px 10px;
+  padding-bottom: 15px;
+  box-shadow: 1px 1px 12px 2px rgb(221, 221, 221);
+}
+.screen-second {
+  background-color: white;
+  margin: 20px;
+  margin-left: 50px;
+  max-width: 360px;
+  border-radius: 30px;
+  padding: 10px 10px;
+  padding-bottom: 15px;
+  width: 336.83px;
+  box-shadow: 1px 1px 12px 2px rgb(221, 221, 221);
+}
